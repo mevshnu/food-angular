@@ -8,6 +8,7 @@ import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const Myroute :Routes=[
   {
@@ -37,7 +38,8 @@ const Myroute :Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(Myroute)
+    RouterModule.forRoot(Myroute),
+    FormsModule
    
   ],
   providers: [],
